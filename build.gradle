@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+group 'com.jpapractice'
+version '1.0.0-SNAPSHOT-'+new Date().format("yyyyMMddHHmmss")
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+
+dependencies {
+    compile('org.hibernate:hibernate-entitymanager:5.3.10.Final')
+    compile('com.h2database:h2:1.4.200')
+}
